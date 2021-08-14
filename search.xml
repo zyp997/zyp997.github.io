@@ -72,63 +72,7 @@
 
 <ul>
 <li>  如果想用自己的网易云音乐歌单，可以修改 <strong>data-id</strong> 的值，这个值的获取方法也很简单。打开浏览器访问网页版的网易云音乐，点击自己的网易云音乐歌单，地址栏的 <strong>id</strong> 参数就是对应的 <strong>data-id</strong> 值。<img data-src="https://guest997.ml/wp-content/uploads/2021/04/cloudmusic-id.png"></li>
-<li>  代码中的其它参数可以根据自己的需要进行修改，具体的参数说明及设置如下面的列表所示。</li>
-</ul>
-<p>option</p>
-<p>default</p>
-<p>description</p>
-<p>id</p>
-<p><strong>require</strong></p>
-<p>song id / playlist id / album id / search keyword</p>
-<p>server</p>
-<p><strong>require</strong></p>
-<p>music platform: , , , , <code>netease``tencent``kugou``xiami``baidu</code></p>
-<p>type</p>
-<p><strong>require</strong></p>
-<p><code>song</code>, , , , <code>playlist``album``search``artist</code></p>
-<p>auto</p>
-<p>options</p>
-<p>music link, support: , , <code>netease``tencent``xiami</code></p>
-<p>fixed</p>
-<p><code>false</code></p>
-<p>enable fixed mode</p>
-<p>mini</p>
-<p><code>false</code></p>
-<p>enable mini mode</p>
-<p>autoplay</p>
-<p><code>false</code></p>
-<p>audio autoplay</p>
-<p>theme</p>
-<p><code>#2980b9</code></p>
-<p>main color</p>
-<p>loop</p>
-<p><code>all</code></p>
-<p>player loop play, values: ‘all’, ‘one’, ‘none’</p>
-<p>order</p>
-<p><code>list</code></p>
-<p>player play order, values: ‘list’, ‘random’</p>
-<p>preload</p>
-<p><code>auto</code></p>
-<p>values: ‘none’, ‘metadata’, ‘auto’</p>
-<p>volume</p>
-<p><code>0.7</code></p>
-<p>default volume, notice that player will remember user setting, default volume will not work after user set volume themselves</p>
-<p>mutex</p>
-<p><code>true</code></p>
-<p>prevent to play multiple player at the same time, pause other players when this player start play</p>
-<p>lrc-type</p>
-<p><code>0</code></p>
-<p>lyric type</p>
-<p>list-folded</p>
-<p><code>false</code></p>
-<p>indicate whether list should folded at first</p>
-<p>list-max-height</p>
-<p><code>340px</code></p>
-<p>list max height</p>
-<p>storage-name</p>
-<p><code>metingjs</code></p>
-<p>localStorage key that store player setting</p>
-<ul>
+<li>  代码中的其它参数可以根据自己的需要进行修改，具体的参数说明及设置可以去官网进行查看。</li>
 <li>  最后刷新下网页，就能在左下角看到如下图的效果。<img data-src="https://guest997.ml/wp-content/uploads/2021/04/ap.png"></li>
 </ul>
 <h2 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h2><p>Aplayer 项目地址：<a href="https://github.com/DIYgod/APlayer">https://github.com/DIYgod/APlayer</a><br>MetingJS 项目地址：<a href="https://github.com/metowolf/MetingJS">https://github.com/metowolf/MetingJS</a></p>
@@ -394,32 +338,8 @@
     <content><![CDATA[<h2 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h2><p>QPlayer2 for WordPress - 一款简洁小巧的 HTML5 底部悬浮音乐播放器</p>
 <h2 id="正文：-安装插件过程我就不赘述了"><a href="#正文：-安装插件过程我就不赘述了" class="headerlink" title="正文：(安装插件过程我就不赘述了)"></a>正文：(安装插件过程我就不赘述了)</h2><ul>
 <li>  在 wordpress 仪表盘中找到设置，点击 <strong>QPlayer2</strong>。</li>
-<li>  歌曲列表的设置参数和格式为：(JSON 数组)</li>
+<li>  歌曲列表的设置参数和格式可以去项目地址下查看。</li>
 </ul>
-<p>键名</p>
-<p>说明</p>
-<p>必须</p>
-<p>name</p>
-<p>歌曲名称</p>
-<p>是</p>
-<p>artist</p>
-<p>艺术家数组或文本</p>
-<p>否</p>
-<p>cover</p>
-<p>封面链接</p>
-<p>否</p>
-<p>audio</p>
-<p>歌曲链接</p>
-<p>是</p>
-<p>lyrics</p>
-<p><a href="https://zh.wikipedia.org/zh-hans/LRC%E6%A0%BC%E5%BC%8F">歌词文本</a></p>
-<p>否</p>
-<p>provider</p>
-<p>提供器名称</p>
-<p>否，默认 <a href="https://github.com/moeshin/QPlayer2#qplayerproviderdefault"><code>default</code></a></p>
-<p>lrc</p>
-<p>歌词链接，随提供器而定</p>
-<p>否</p>
 <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">[&#123;</span><br><span class="line">    <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;Nightglow&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;artist&quot;</span>: <span class="string">&quot;蔡健雅&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;audio&quot;</span>: <span class="string">&quot;https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Nightglow.mp3&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;cover&quot;</span>: <span class="string">&quot;https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Nightglow.jpg&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;lrc&quot;</span>: <span class="string">&quot;https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Nightglow.lrc&quot;</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;やわらかな光&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;artist&quot;</span>: <span class="string">&quot;やまだ豊&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;audio&quot;</span>: <span class="string">&quot;https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/やわらかな光.mp3&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;cover&quot;</span>: <span class="string">&quot;https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/やわらかな光.jpg&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;lyrics&quot;</span>: <span class="string">&quot;[00:00.00]请欣赏&quot;</span></span><br><span class="line">&#125;]</span><br></pre></td></tr></table></figure>
 
 <h2 id="备注："><a href="#备注：" class="headerlink" title="备注："></a>备注：</h2><p>作者项目地址：<a href="https://github.com/moeshin/QPlayer2-WordPress">https://github.com/moeshin/QPlayer2-WordPress</a></p>
@@ -549,18 +469,34 @@
 <li>  点击右上角 <strong>Fork</strong> ，会跳转到你的项目地址。（需要 GitHub 账号）</li>
 <li>  点击 <strong>Settings</strong> ，在左边栏目找到并点击 <strong>Secrets</strong> ，再点击右上角的 <strong>New repository secret</strong>，分别创建如下表的参数。</li>
 </ul>
-<p>Secrets变量</p>
-<p>说明</p>
-<p><code>IBM_CF_USERNAME</code></p>
-<p>IBM Cloud 邮箱地址</p>
-<p><code>IBM_CF_PASSWORD</code></p>
-<p>IBM Cloud 邮箱密码</p>
-<p><code>IBM_CF_APP_NAME</code></p>
-<p>IBM Cloud 应用程序名</p>
-<p><code>V2_UUID</code></p>
-<p>自定义 UUID 码</p>
-<p><code>V2_WS_PATH_VMESS</code><br><code>V2_WS_PATH_VLESS</code></p>
-<p>左边协议选择一个，填入自定义 PATH 路径</p>
+<table>
+<thead>
+<tr>
+<th>Secrets变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IBM_CF_USERNAME</td>
+<td>IBM Cloud 邮箱地址</td>
+</tr>
+<tr>
+<td>IBM_CF_PASSWORD</td>
+<td>IBM Cloud 邮箱密码</td>
+</tr>
+<tr>
+<td>IBM_CF_APP_NAME</td>
+<td>IBM Cloud 应用程序名</td>
+</tr>
+<tr>
+<td><code>V2_UUID</code></td>
+<td>自定义 UUID 码</td>
+</tr>
+<tr>
+<td>V2_WS_PATH_VMESS                                        V2_WS_PATH_VLESS</td>
+<td>左边协议选择一个，填入自定义 PATH 路径</td>
+</tr>
+</tbody></table>
 <ul>
 <li>  点击 <strong>Actions</strong> ，点击 <strong>I understand my workflows, go and ahead and enable them</strong> ，在左边栏目找到并点击 <strong>IBM Cloud Foundry - Xray</strong> ，点击 <strong>Enable workflow</strong> ，再点击 <strong>Run workflow</strong> 选项，最后点击 <strong>Run workflow</strong> 。</li>
 <li>在左边栏目找到并点击 <strong>All workflows</strong> ，如出现下图结果则表示实例部署成功。(如果什么都没显示，则在 <strong>README.md</strong> 文件随便打个字符即可；如果执行失败，则仔细检查 <strong>Secrets 变量</strong> 是否填写正确，之后再重新执行 <strong>Actions</strong>)<br>  <img data-src="https://guest997.ml/wp-content/uploads/2021/01/xray0.png"></li>
@@ -1013,12 +949,22 @@
 <li>  点击右上角 <strong>Fork</strong> ，会跳转到你的项目地址。（需要 GitHub 账号）</li>
 <li>  点击 <strong>Settings</strong> ，在左边栏目找到并点击 <strong>Secrets</strong> ，再点击右上角的 <strong>New repository secret</strong>，分别创建如下表的参数。（支持同时添加多个账号，数据之间用单个空格隔开即可，账号邮箱和账号密码需一一对应）</li>
 </ul>
-<p>Secrets变量</p>
-<p>说明</p>
-<p><code>`USERNAME`</code></p>
-<p>EUserv 账号邮箱</p>
-<p><code>PWD</code></p>
-<p>EUserv 账号密码</p>
+<table>
+<thead>
+<tr>
+<th>Secrets变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>USERNAME</td>
+<td>EUserv 账号邮箱</td>
+</tr>
+<tr>
+<td>PWD</td>
+<td>EUserv 账号密码</td>
+</tr>
+</tbody></table>
 <ul>
 <li>  点击 <strong>Actions</strong> ，点击 <strong>I understand my workflows, go and ahead and enable them</strong> ，在左边栏目找到并点击 <strong>EUserv Auto Extend</strong> ，点击 <strong>Enable workflow</strong> ，再点击 <strong>Run workflow</strong> 选项，最后点击 <strong>Run workflow</strong> 。</li>
 <li>在左边栏目找到并点击 <strong>All workflows</strong> ，如出现下图结果则表示配置成功。(如果什么都没显示，则在 <strong>README.md</strong> 文件随便打个字符即可；如果执行失败，则仔细检查 <strong>Secrets 变量</strong> 是否填写正确，之后再重新执行 <strong>Actions</strong>)<br>  <img data-src="https://guest997.ml/wp-content/uploads/2021/01/extend.png"></li>
@@ -1153,12 +1099,22 @@
 <li>  点击右上角 <strong>Fork</strong> ，会跳转到你的项目地址。（需要 GitHub 账号）</li>
 <li>  点击 <strong>Settings</strong> ，在左边栏目找到并点击 <strong>Secrets</strong> ，再点击右上角的 <strong>New repository secret</strong>，分别创建如下表的参数。（如想要添加多个账号，请看下方备注）</li>
 </ul>
-<p>Secrets变量</p>
-<p>说明</p>
-<p><code>USERNAME</code></p>
-<p>Freenom 账号邮箱</p>
-<p><code>PASSWORD</code></p>
-<p>Freenom 账号密码</p>
+<table>
+<thead>
+<tr>
+<th>Secrets变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>USERNAME</td>
+<td>Freenom 账号邮箱</td>
+</tr>
+<tr>
+<td>PASSWORD</td>
+<td>Freenom 账号密码</td>
+</tr>
+</tbody></table>
 <ul>
 <li>  点击 <strong>Actions</strong> ，点击 <strong>I understand my workflows, go and ahead and enable them</strong> ，在左边栏目找到并点击 <strong>autorun</strong> ，点击 <strong>Enable workflow</strong> ，再点击 <strong>Run workflow</strong> 选项，最后点击 <strong>Run workflow</strong> 。</li>
 <li>在左边栏目找到并点击 <strong>All workflows</strong> ，如出现下图结果则表示配置成功。(如果什么都没显示，则在 <strong>README.md</strong> 文件随便打个字符即可；如果执行失败，则仔细检查 <strong>Secrets 变量</strong> 是否填写正确，之后再重新执行 <strong>Actions</strong>)<br>  <img data-src="https://guest997.ml/wp-content/uploads/2021/01/freenom-1.png"></li>
@@ -1452,8 +1408,7 @@
   <entry>
     <title>HTML 基础(一)</title>
     <url>/2021/04/17/html-basis01/</url>
-    <content><![CDATA[<h2 id="网页基本结构"><a href="#网页基本结构" class="headerlink" title="网页基本结构"></a>网页基本结构</h2><body></body>等成对的标签，分别叫开放标签和闭合标签。单独呈现的标签（空元素），如<hr/>意为用 / 来关闭空元素的自闭合标签。
-
+    <content><![CDATA[<h2 id="网页基本结构"><a href="#网页基本结构" class="headerlink" title="网页基本结构"></a>网页基本结构</h2><p><code>&lt;body&gt;&lt;/body&gt;</code>等成对的标签，分别叫开放标签和闭合标签。单独呈现的标签（空元素），如<code>&lt;hr/&gt;</code>意为用 / 来关闭空元素的自闭合标签。</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!--DOCTYPE：告诉浏览器，我们使用什么规范--&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--head：网页头部--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--meta：描述性标签，描述网站的一些信息。一般用来做 SEO--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--title：网页标题--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Guest997<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">content</span>=<span class="string">&quot;一个在互联网下的小小 Coder。&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;description&quot;</span> <span class="attr">content</span>=<span class="string">&quot;个人博客...&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--body：网页主体--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="网页基本标签"><a href="#网页基本标签" class="headerlink" title="网页基本标签"></a>网页基本标签</h2><ul>
@@ -1462,7 +1417,7 @@
 <li>  换行标签（br）</li>
 <li>  水平线标签（hr）</li>
 <li>  字体样式标签（strong、em……）</li>
-<li>  注释和特殊符号（注释：<!----> 空格：&nbsp; 版权：&copy; 等等）</li>
+<li>  注释和特殊符号（注释：<code>&lt;!----&gt; </code>空格：&nbsp; 版权：<code>&amp;copy</code>; 等等）</li>
 </ul>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>基本标签学习<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--标题标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级标签<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标签<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标签<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标签<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标签<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级标签<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--段落标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>https://guest997.ml<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>https://guest997.ml/article/<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--换行标签（只算一段）--&gt;</span></span><br><span class="line">https://guest997.ml<span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">https://guest997.ml/article/</span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--水平线标签--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--字体样式标签--&gt;</span></span><br><span class="line">粗体：<span class="tag">&lt;<span class="name">strong</span>&gt;</span>Guest997<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">斜体：<span class="tag">&lt;<span class="name">em</span>&gt;</span>Guest997<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--注释--&gt;</span></span><br><span class="line"><span class="comment">&lt;!----&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--特殊符号--&gt;</span></span><br><span class="line">空         格   <span class="comment">&lt;!--不管中间有多少个空格，显示出来的，中间空格都只有一个--&gt;</span></span><br><span class="line">空<span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span><span class="symbol">&amp;nbsp;</span>格</span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="symbol">&amp;copy;</span>版权所有 Guest997</span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">特殊符号记忆方式：</span></span><br><span class="line"><span class="comment">$   ;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
@@ -1477,8 +1432,8 @@
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>链接标签学习<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--顶部锚标记--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span> <span class="attr">id</span>=<span class="string">&quot;top&quot;</span>&gt;</span>顶部锚链接标记<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--底部锚链接--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#down&quot;</span>&gt;</span>去到底部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--页面间链接</span></span><br><span class="line"><span class="comment">href：跳转的页面地址</span></span><br><span class="line"><span class="comment">target：表示页面在哪打开    默认是_self：在当前标签页打开； _blank：在新标签页中打开。</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--文字链接--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://guest997.ml&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>我的博客...<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--图像链接--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://guest997.ml&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;../resource/images/avatar.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;avatar&quot;</span> <span class="attr">title</span>=<span class="string">&quot;鼠标悬停文字&quot;</span> <span class="attr">width</span>=<span class="string">&quot;900&quot;</span> <span class="attr">height</span>=<span class="string">&quot;900&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--页面内锚链接</span></span><br><span class="line"><span class="comment">1.需要一个锚标记（使用 name 或 id 标记，推荐使用 id 标记，使用 name 会出现一些奇怪的问题）</span></span><br><span class="line"><span class="comment">2.创建一个跳转到标记的标签（# + 标记名）</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--顶部锚链接--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;#top&quot;</span>&gt;</span>回到顶部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--底部锚标记--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span> <span class="attr">id</span>=<span class="string">&quot;down&quot;</span>&gt;</span>底部锚链接标记<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--页面间锚链接</span></span><br><span class="line"><span class="comment">href：跳转的页面地址 + # + 标记名</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;https://guest997.ml/article/#footer&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span>&gt;</span>跳转到我的博客底部<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--功能性链接</span></span><br><span class="line"><span class="comment">mailto：邮件链接（会自动调用设备上的邮件客户端）</span></span><br><span class="line"><span class="comment">QQ 推广：https://shang.qq.com/v3/widget.html（这种 QQ 已经做好了的，直接复制就好了）</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;mailto:1036635267@qq.com&quot;</span>&gt;</span>点击邮件联系我！<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">href</span>=<span class="string">&quot;http://wpa.qq.com/msgrd?v=3&amp;uin=1036635267&amp;site=qq&amp;menu=yes&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">src</span>=<span class="string">&quot;http://wpa.qq.com/pa?p=2:1036635267:51&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;点击这里给我发消息&quot;</span> <span class="attr">title</span>=<span class="string">&quot;点击这里给我发消息&quot;</span>/&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="IDEA-快捷代码缩写、快捷键-后面的文章可能会继续补充"><a href="#IDEA-快捷代码缩写、快捷键-后面的文章可能会继续补充" class="headerlink" title="IDEA 快捷代码缩写、快捷键(后面的文章可能会继续补充)"></a>IDEA 快捷代码缩写、快捷键(后面的文章可能会继续补充)</h2><ul>
-<li>  ctrl + / = <!----></li>
-<li>  html + tab = <html></html>（所有标签都能像这样地自动补全）</li>
+<li>  ctrl + / = <code>&lt;!----&gt;</code></li>
+<li>  html + tab = <code>&lt;html&gt;&lt;/html&gt;</code>（所有标签都能像这样地自动补全）</li>
 </ul>
 ]]></content>
       <categories>
@@ -1635,16 +1590,30 @@
 <li>  点击右上角 <strong>Fork</strong> ，会跳转到你的项目地址。（需要 GitHub 账号）</li>
 <li>  点击 <strong>Settings</strong> ，在左边栏目找到并点击 <strong>Secrets</strong> ，再点击右上角的 <strong>New repository secret</strong>，分别创建如下表的参数。</li>
 </ul>
-<p>Secrets变量</p>
-<p>说明</p>
-<p><code>MAIL</code></p>
-<p>IBM Cloud 邮箱地址</p>
-<p><code>PWD</code></p>
-<p>IBM Cloud 邮箱密码</p>
-<p><code>CFNAME</code></p>
-<p>IBM Cloud 应用程序名</p>
-<p><code>RGN</code></p>
-<p>us-south(达拉斯)、eu-gb(伦敦)</p>
+<table>
+<thead>
+<tr>
+<th>Secrets变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MAIL</td>
+<td>IBM Cloud 邮箱地址</td>
+</tr>
+<tr>
+<td>PWD</td>
+<td>IBM Cloud 邮箱密码</td>
+</tr>
+<tr>
+<td>CFNAME</td>
+<td>IBM Cloud 应用程序名</td>
+</tr>
+<tr>
+<td>RGN</td>
+<td>us-south(达拉斯)、eu-gb(伦敦)</td>
+</tr>
+</tbody></table>
 <ul>
 <li>  点击 <strong>Actions</strong> ，点击 <strong>I understand my workflows, go and ahead and enable them</strong> ，在左边栏目找到并点击 <strong>IBM Cloud Auto Restart</strong> ，点击 <strong>Enable workflow</strong> ，再点击 <strong>Run workflow</strong> 选项，最后点击 <strong>Run workflow</strong> 。</li>
 <li>在左边栏目找到并点击 <strong>All workflows</strong> ，如出现下图结果则表示配置成功。(如果什么都没显示，则在 <strong>README.md</strong> 文件随便打个字符即可；如果执行失败，则仔细检查 <strong>Secrets 变量</strong> 是否填写正确，之后再重新执行 <strong>Actions</strong>)<br>  <img data-src="https://guest997.ml/wp-content/uploads/2021/01/ssrot-ibm.png"></li>
@@ -1943,83 +1912,171 @@
     <url>/2021/05/20/javascript-basis07/</url>
     <content><![CDATA[<h2 id="操作-BOM-对象"><a href="#操作-BOM-对象" class="headerlink" title="操作 BOM 对象"></a>操作 BOM 对象</h2><p>BOM：BrowserObjectModel（浏览器对象模型）<img data-src="https://guest997.ml/wp-content/uploads/2021/05/bom.jpg"></p>
 <h3 id="window-对象（重要）"><a href="#window-对象（重要）" class="headerlink" title="window 对象（重要）"></a>window 对象（重要）</h3><p>表示窗口位置的属性有 screenLeft、screenTop、screenX、screenY、表示窗口大小的属性有 innerWidth、innerHeight、outerWidth、outerHeight，但是它们的具体含义和不同的浏览器密切相关。在处理浏览器差异性建议使用 js 框架。</p>
-<p>方法</p>
-<p>说明</p>
-<p>open()</p>
-<p>返回新打开窗口的引用，利用该引用可以继续操作该新窗口</p>
-<p>moveTo(x,y)</p>
-<p>x 和 y 表示新位置的x和y坐标值 只适用于最外层 window 对象</p>
-<p>moveBy(x,y)</p>
-<p>x 和 y 表示在水平和垂直方向上移动的像素数 只适用于最外层 window 对象</p>
-<p>resizeTo(x,y)</p>
-<p>x 和 y 表示浏览器窗口的新宽度和新高度 只适用于最外层 window 对象</p>
-<p>resizeBy(x,y)</p>
-<p>x 和 y 表示浏览器窗口的宽高变化尺寸 只适用于最外层 window 对象</p>
-<p>alert()</p>
-<p>提示框-显示时包含传入的字符串和“确定”按钮</p>
-<p>confirm()</p>
-<p>确认框-点击 确认 返回 true，点击 取消 返回 false</p>
-<p>prompt()</p>
-<p>确认 按钮（返回文本输入域的内容）、取消 按钮（返回 null）和文本输入域。</p>
-<p>find()</p>
-<p>等同使用浏览器菜单栏的 查找 命令打开对话框</p>
-<p>print()</p>
-<p>等同使用浏览器菜单栏的 打印 命令打开对话框</p>
-<p>setTimeOut()</p>
-<p>参数为：执行函数或代码、执行代码前需要等待的时间（毫秒）</p>
-<p>clearTimeOut()</p>
-<p>参数为 setTimeout() 的引用</p>
-<p>setInterval()</p>
-<p>参数为：执行函数或代码、循环执行代码的间隔时间（毫秒）</p>
-<p>clearInterval()</p>
-<p>参数为 setInterval() 的引用</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>open()</td>
+<td>返回新打开窗口的引用，利用该引用可以继续操作该新窗口</td>
+</tr>
+<tr>
+<td>moveTo(x,y)</td>
+<td>x 和 y 表示新位置的x和y坐标值 只适用于最外层 window 对象</td>
+</tr>
+<tr>
+<td>moveBy(x,y)</td>
+<td>x 和 y 表示在水平和垂直方向上移动的像素数 只适用于最外层 window 对象</td>
+</tr>
+<tr>
+<td>resizeTo(x,y)</td>
+<td>x 和 y 表示浏览器窗口的新宽度和新高度 只适用于最外层 window 对象</td>
+</tr>
+<tr>
+<td>resizeBy(x,y)</td>
+<td>x 和 y 表示浏览器窗口的宽高变化尺寸 只适用于最外层 window 对象</td>
+</tr>
+<tr>
+<td>alert()</td>
+<td>提示框-显示时包含传入的字符串和“确定”按钮</td>
+</tr>
+<tr>
+<td>confirm()</td>
+<td>确认框-点击 确认 返回 true，点击 取消 返回 false</td>
+</tr>
+<tr>
+<td>prompt()</td>
+<td>确认 按钮（返回文本输入域的内容）、取消 按钮（返回 null）和文本输入域。</td>
+</tr>
+<tr>
+<td>find()</td>
+<td>等同使用浏览器菜单栏的 查找 命令打开对话框</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>等同使用浏览器菜单栏的 打印 命令打开对话框</td>
+</tr>
+<tr>
+<td>setTimeOut()</td>
+<td>参数为：执行函数或代码、执行代码前需要等待的时间（毫秒）</td>
+</tr>
+<tr>
+<td>clearTimeOut()</td>
+<td>参数为 setTimeout() 的引用</td>
+</tr>
+<tr>
+<td>setInterval()</td>
+<td>参数为：执行函数或代码、循环执行代码的间隔时间（毫秒）</td>
+</tr>
+<tr>
+<td>clearInterval()</td>
+<td>参数为 setInterval() 的引用</td>
+</tr>
+</tbody></table>
 <h3 id="history-对象"><a href="#history-对象" class="headerlink" title="history 对象"></a>history 对象</h3><p>history 对象保存着从窗口被打开起的 <strong>历史记录</strong>，每个浏览器窗口、标签页、框架都有自己的 history 对象。</p>
-<p>属性或方法</p>
-<p>说明</p>
-<p>length</p>
-<p>历史记录的数量</p>
-<p>go()</p>
-<p>0表示刷新页面，负数表示向后跳转，正数表示向前跳转，字符串参数表示跳转到历史记录中包含该字符串的最近一个位置 （可能前进，也可能后退）</p>
-<p>back()</p>
-<p>后退一页，可模仿浏览器 后退 按钮</p>
-<p>forward()</p>
-<p>前进一页，可模仿浏览器 前进 按钮</p>
+<table>
+<thead>
+<tr>
+<th>属性或方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>length</td>
+<td>历史记录的数量</td>
+</tr>
+<tr>
+<td>go()</td>
+<td>0表示刷新页面，负数表示向后跳转，正数表示向前跳转，字符串参数表示跳转到历史记录中包含该字符串的最近一个位置 （可能前进，也可能后退）</td>
+</tr>
+<tr>
+<td>back()</td>
+<td>后退一页，可模仿浏览器 后退 按钮</td>
+</tr>
+<tr>
+<td>forward()</td>
+<td>前进一页，可模仿浏览器 前进 按钮</td>
+</tr>
+</tbody></table>
 <h3 id="location-对象（重要）"><a href="#location-对象（重要）" class="headerlink" title="location 对象（重要）"></a>location 对象（重要）</h3><p>location 对象提供了与当前窗口中 <strong>加载的文档有关的信息以及一些导航功能</strong>，它既是 window 对象的属性，同时也是 document 对象的属性。</p>
-<p>属性或方法</p>
-<p>说明</p>
-<p>href</p>
-<p>返回当前完整的 URL 地址 == location.toString()</p>
-<p>host</p>
-<p>返回服务器名称和端口号</p>
-<p>hostname</p>
-<p>返回服务器名称</p>
-<p>port</p>
-<p>返回 URL 中指定的端口号，如果没有，返回空字符串</p>
-<p>pathname</p>
-<p>返回 URL 中的目录和文件名</p>
-<p>protocol</p>
-<p>返回页面使用的协议，通常是 http 或 https</p>
-<p>search</p>
-<p>返回 URL 的查询字符串，这个字符串以问号开头</p>
-<p>assign()</p>
-<p>立即打开新 URL 并在浏览器历史中生成一条记录，相当于直接设置 location.href 值， 也可以修改 location 对象的其它属性来重新加载</p>
-<p>replace()</p>
-<p>打开新 URL，但是不会生成历史记录，使用 replace() 之后，用户不能通过 后退 回到前一个页面</p>
-<p>reload()</p>
-<p>重新加载当前页面，不传递参数时会以最有效方式加载（可能从缓存中加载）， 传入 true 时，则强制从浏览器重新加载</p>
+<table>
+<thead>
+<tr>
+<th>属性或方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>返回当前完整的 URL 地址 == location.toString()</td>
+</tr>
+<tr>
+<td>host</td>
+<td>返回服务器名称和端口号</td>
+</tr>
+<tr>
+<td>hostname</td>
+<td>返回服务器名称</td>
+</tr>
+<tr>
+<td>port</td>
+<td>返回 URL 中指定的端口号，如果没有，返回空字符串</td>
+</tr>
+<tr>
+<td>pathname</td>
+<td>返回 URL 中的目录和文件名</td>
+</tr>
+<tr>
+<td>protocol</td>
+<td>返回页面使用的协议，通常是 http 或 https</td>
+</tr>
+<tr>
+<td>search</td>
+<td>返回 URL 的查询字符串，这个字符串以问号开头</td>
+</tr>
+<tr>
+<td>assign()</td>
+<td>立即打开新 URL 并在浏览器历史中生成一条记录，相当于直接设置 location.href 值， 也可以修改 location 对象的其它属性来重新加载</td>
+</tr>
+<tr>
+<td>replace()</td>
+<td>打开新 URL，但是不会生成历史记录，使用 replace() 之后，用户不能通过 后退 回到前一个页面</td>
+</tr>
+<tr>
+<td>reload()</td>
+<td>重新加载当前页面，不传递参数时会以最有效方式加载（可能从缓存中加载）， 传入 true 时，则强制从浏览器重新加载</td>
+</tr>
+</tbody></table>
 <h3 id="navigator-对象"><a href="#navigator-对象" class="headerlink" title="navigator 对象"></a>navigator 对象</h3><p>navigator 对象用来描述浏览器本身，包括 <strong>浏览器的名称、版本、语言、系统平台、用户特性字符串</strong> 等信息。但是各个浏览器及浏览器的不同版本之间对这个对象的实现也不尽相同。</p>
 <p><strong>注意：大多数时候，我们不会使用 navigator 对象，因为会被人为修改。</strong></p>
 <h3 id="screen-对象"><a href="#screen-对象" class="headerlink" title="screen 对象"></a>screen 对象</h3><p>screen 对象用来表明客户端显示器的能力。多用于测定客户端能力的站点跟踪工具中。包括浏览器窗口外部的显示器的信息，如像素宽度和高度等，每个浏览器中的 screen 对象都包含着各不相同的属性。</p>
-<p><strong>属性</strong></p>
-<p><strong>说明</strong></p>
-<p>height</p>
-<p>屏幕的像素高度</p>
-<p>width</p>
-<p>屏幕的像素宽度</p>
-<p>availHeight</p>
-<p>屏幕的像素高度减系统部件高度之后的值</p>
-<p>availWidth</p>
-<p>屏幕的像素宽度减系统部件宽度之后的值</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>height</td>
+<td>屏幕的像素高度</td>
+</tr>
+<tr>
+<td>width</td>
+<td>屏幕的像素宽度</td>
+</tr>
+<tr>
+<td>availHeight</td>
+<td>屏幕的像素高度减系统部件高度之后的值</td>
+</tr>
+<tr>
+<td>availWidth</td>
+<td>屏幕的像素宽度减系统部件宽度之后的值</td>
+</tr>
+</tbody></table>
 <h3 id="document-对象（重要）"><a href="#document-对象（重要）" class="headerlink" title="document 对象（重要）"></a>document 对象（重要）</h3><p>document 对象既是 BOM 顶级对象的一个属性，更是 DOM 模型中的顶级对象，会在 DOM 中一起总结。</p>
 ]]></content>
       <categories>
@@ -2060,7 +2117,7 @@
 <h2 id="md5-加密密码"><a href="#md5-加密密码" class="headerlink" title="md5 加密密码"></a>md5 加密密码</h2><p>加密的效果可以在浏览器开发者工具的 network(网络) 中看到。</p>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--导入 md5.js 文件用于加密密码--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.bootcdn.net/ajax/libs/blueimp-md5/2.18.0/js/md5.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;#&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span> <span class="attr">onsubmit</span>=<span class="string">&quot;return test()&quot;</span>&gt;</span>   <span class="comment">&lt;!--提交表单时调用 test()，注意：一定要写 return，否则想阻止表单提交时会不成功。--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>用户名：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">id</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Guest997&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">id</span>=<span class="string">&quot;orgin-pwd&quot;</span> <span class="attr">value</span>=<span class="string">&quot;123456&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;hidden&quot;</span> <span class="attr">id</span>=<span class="string">&quot;md5-pwd&quot;</span> <span class="attr">name</span>=<span class="string">&quot;pwd&quot;</span>&gt;</span>   <span class="comment">&lt;!--只有设置了 name 属性的表单元素，后台才能获取到。--&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">name</span>=<span class="string">&quot;submit&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"><span class="meta"></span></span></span><br><span class="line"><span class="meta"><span class="javascript">    &#x27;use strict&#x27;</span>;</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> orginPwd = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;orgin-pwd&#x27;</span>);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> md5Pwd = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;md5-pwd&#x27;</span>);</span></span><br><span class="line"><span class="javascript">        md5Pwd.value = md5(orginPwd.value);</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> <span class="literal">true</span>;      <span class="comment">//不写这行代码，默认是返回为 true。如果返回为 false，则会阻止表单提交。</span></span></span><br><span class="line"><span class="javascript">        <span class="comment">//同样的效果</span></span></span><br><span class="line"><span class="javascript">        <span class="comment">/*var md5Pwd = document.getElementsByName(&#x27;pwd&#x27;);</span></span></span><br><span class="line"><span class="comment"><span class="javascript">        md5Pwd[0].value = md5(orginPwd.value);*/</span></span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img data-src="https://guest997.ml/wp-content/uploads/2021/05/md5pwd.png">至于为什么要多创建一个 hidden 的表单元素，是因为真正提交给后台的是这隐藏的表单元素，提高了安全性。并且如果只是在 password 表单元素上进行 js 处理，会发现在提交表单的一瞬间，因为 md5 加密的密码会变长，破坏了用户使用的体验。</p>
+<p><img data-src="https://guest997.ml/wp-content/uploads/2021/05/md5pwd.png"><br>至于为什么要多创建一个 hidden 的表单元素，是因为真正提交给后台的是这隐藏的表单元素，提高了安全性。并且如果只是在 password 表单元素上进行 js 处理，会发现在提交表单的一瞬间，因为 md5 加密的密码会变长，破坏了用户使用的体验。</p>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -2199,9 +2256,11 @@
 <figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line"><span class="comment">//创建 Scanner 对象准备接收用户输入数据</span></span><br><span class="line">Scanner scanner = <span class="keyword">new</span> <span class="constructor">Scanner(System.<span class="params">in</span>)</span>;</span><br><span class="line"><span class="module-access"><span class="module"><span class="identifier">System</span>.</span></span>out.println(<span class="string">&quot;请输入数据：&quot;</span>);</span><br><span class="line">​</span><br><span class="line"><span class="comment">//使用 hasNext() 判断用户是否还有数据输入</span></span><br><span class="line"><span class="keyword">if</span>(scanner.has<span class="constructor">Next()</span>)&#123;</span><br><span class="line">    <span class="comment">//使用 next() 接收数据</span></span><br><span class="line">    <span class="module-access"><span class="module"><span class="identifier">System</span>.</span></span>out.println(<span class="string">&quot;next() 接收输出：&quot;</span> + scanner.next<span class="literal">()</span>);</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line"><span class="comment">//使用 hasNextLine() 判断用户是否还有数据输入</span></span><br><span class="line"><span class="keyword">if</span>(scanner.has<span class="constructor">NextLine()</span>)&#123;</span><br><span class="line">    <span class="comment">//使用 nextLine() 接收数据</span></span><br><span class="line">    <span class="module-access"><span class="module"><span class="identifier">System</span>.</span></span>out.println(<span class="string">&quot;nextLine() 接收输出：&quot;</span> + scanner.next<span class="constructor">Line()</span>);</span><br><span class="line">&#125;</span><br><span class="line">​</span><br><span class="line"><span class="comment">//属于 IO 流的类要关闭，否则会一直占用资源。</span></span><br><span class="line">scanner.close<span class="literal">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>运行结果为；</p>
-<p>请输入数据：<br>Hello World!<br>next() 接收输出：Hello<br>nextLine() 接收输出： World!<br>​<br>Process finished with exit code 0</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello World!  </span><br><span class="line">next() 接收输出：Hello  </span><br><span class="line">nextLine() 接收输出： World!  </span><br><span class="line"></span><br><span class="line">Process finished with exit code 0</span><br></pre></td></tr></table></figure>
+
 <p>注释掉 hasNext() 部分，运行结果为：</p>
-<p>请输入数据：<br>Hello World!<br>nextLine() 接收输出：Hello World!<br>​<br>Process finished with exit code 0</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hello World!  </span><br><span class="line">nextLine() 接收输出：Hello World!  </span><br><span class="line"></span><br><span class="line">Process finished with exit code 0</span><br></pre></td></tr></table></figure>
+
 <h2 id="next-和-nextLine-区别"><a href="#next-和-nextLine-区别" class="headerlink" title="next() 和 nextLine() 区别"></a>next() 和 nextLine() 区别</h2><h3 id="next"><a href="#next" class="headerlink" title="next():"></a>next():</h3><ul>
 <li>  一定要读到有效字符后才可以结束输入。</li>
 <li>  对输入有效字符之前的空白，自动去掉。</li>
@@ -3994,7 +4053,7 @@
     <title>MySQL 基础(二)</title>
     <url>/2021/05/27/mysql-basis02/</url>
     <content><![CDATA[<h2 id="操作数据库（-里的内容表示可选）"><a href="#操作数据库（-里的内容表示可选）" class="headerlink" title="操作数据库（[ ]里的内容表示可选）"></a>操作数据库（[ ]里的内容表示可选）</h2><p><strong>注意：MySQL 关键字不区分大小写。</strong></p>
-<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;          <span class="comment">-- 显示所有数据库</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> [<span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span>] 数据库名;  <span class="comment">-- 创建数据库</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> [<span class="keyword">if</span> <span class="keyword">exists</span>] 数据库名;      <span class="comment">-- 删除数据库</span></span><br><span class="line">use 数据库名；             <span class="comment">-- 使用某个数据库</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">database</span> 数据库名;    <span class="comment">-- 显示某个数据库的定义</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;          <span class="comment">-- 显示所有数据库</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> [<span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span>] 数据库名;  <span class="comment">-- 创建数据库</span></span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> [<span class="keyword">if</span> <span class="keyword">exists</span>] 数据库名;      <span class="comment">-- 删除数据库</span></span><br><span class="line">use 数据库名；             <span class="comment">-- 使用某个数据库</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">database</span> 数据库名;    <span class="comment">-- 显示某个数据库的定义</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><p>点击下方链接了解 MySQL 的数据类型。<br><a href="https://www.runoob.com/mysql/mysql-data-types.html">https://www.runoob.com/mysql/mysql-data-types.html</a></p>
 <h3 id="NULL"><a href="#NULL" class="headerlink" title="NULL"></a>NULL</h3><ul>
